@@ -108,7 +108,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                           child: Text(
                             'EduTransit',
                             style: GoogleFonts.dancingScript(
-                              fontSize: 42, // Slightly larger for better appearance
+                              fontSize: 43, // Slightly larger for better appearance
                               fontWeight: FontWeight.w700,
                               color: Colors.blue.shade700,
                               letterSpacing: 1.0,
