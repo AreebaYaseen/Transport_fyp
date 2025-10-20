@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:transport_fyp/screens/login/signup_screen.dart';
 import 'package:transport_fyp/screens/splash_screen.dart';
+import 'firebase_options.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+void main() async{
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   runApp(const MyApp());
 }
 

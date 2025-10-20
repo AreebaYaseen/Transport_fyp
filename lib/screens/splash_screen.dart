@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:transport_fyp/screens/SlidingScreen.dart'; // Import google_fonts
+import 'package:transport_fyp/screens/SlidingScreen.dart';
+import 'package:transport_fyp/screens/login/login_screen.dart'; // Import google_fonts
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -64,7 +65,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
   void _startNavigationTimer() {
     Future.delayed(const Duration(seconds: 5), () {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const SlidingScreen()),
+        MaterialPageRoute(builder: (context) => const LoginScreen()),
       );
     });
   }
